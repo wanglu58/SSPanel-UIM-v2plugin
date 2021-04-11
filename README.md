@@ -28,7 +28,7 @@ systemctl enable docker
 ```
 mkdir v2ray-agent
 cd v2ray-agent
-curl https://raw.githubusercontent.com/wanglu58/SSPanel-UIM-v2plugin/master/install-offical.sh -o install.sh
+curl https://raw.githubusercontent.com/wanglu58/SSPanel-UIM-v2plugin/master/install.sh -o install.sh
 chmod +x install.sh
 ./install.sh
 ```
