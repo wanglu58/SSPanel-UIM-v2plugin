@@ -318,7 +318,7 @@ config_caddy_docker_cloudflare(){
 # Install docker and docker compose
 install_docker(){
     echo -e "开始安装 DOCKER "
-    docker version > /dev/null || curl -fsSL get.docker.com | bash
+    docker version > /dev/null || (curl -fsSL get.docker.com | bash && systemctl enable docker)
     echo -e "开始安装 Docker Compose "
     docker-compose version > /dev/null || curl -L https://github.com/docker/compose/releases/download/1.17.1/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
     chmod +x /usr/local/bin/docker-compose
