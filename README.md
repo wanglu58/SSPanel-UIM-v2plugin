@@ -17,13 +17,6 @@ systemctl stop firewalld.service
 systemctl disable firewalld.service
 ```
 
-安装docker：
-```
-docker version > /dev/null || curl -fsSL get.docker.com | bash
-service docker restart
-systemctl enable docker
-```
-
 运行脚本：
 ```
 mkdir v2ray-agent
