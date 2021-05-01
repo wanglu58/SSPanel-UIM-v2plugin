@@ -139,7 +139,7 @@ pre_install_docker_compose(){
 
     # Set ssrpanel node_id
     echo "你前端节点信息里面的节点ID"
-    read -p "(就你他妈前端添加节点后生成的ID 比如说是3这样子):" ssrpanel_node_id
+    read -p "(你前端添加节点后生成的ID 比如说是3这样子):" ssrpanel_node_id
     [ -z "${ssrpanel_node_id}" ] && ssrpanel_node_id=0
     echo
     echo "---------------------------"
