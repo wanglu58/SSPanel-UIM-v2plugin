@@ -400,7 +400,7 @@ install_dependencies(){
     fi
     echo -e "[${green}Info${plain}] 将时区设置为上海"
     ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
-    date -s "$(curl -sI g.cn | grep Date | cut -d' ' -f3-6)Z"
+    #date -s "$(curl -sI g.cn | grep Date | cut -d' ' -f3-6)Z"
 
 }
 #update_image
